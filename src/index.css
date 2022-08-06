@@ -1,8 +1,10 @@
 :root {
   --cyan-blue_dark: #042541;
-  --cyan-blue-light: #05345c;
+  --cyan-blue_light: #05345c;
   --white: #ffffff;
   --red: #ec2227;
+  --grey: #e3e3e3;
+  --grey_dark: #3d3d52;
 }
 
 @font-face {

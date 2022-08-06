@@ -14,7 +14,7 @@
   bottom: 0;
   padding: 10px;
   font-size: 0.8rem;
-  background-color: var(--cyan-blue-light);
+  background-color: var(--cyan-blue_light);
   display: flex;
   align-items: center;
 }

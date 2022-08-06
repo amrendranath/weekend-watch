@@ -5,7 +5,7 @@ import indianFlag from "../../assets/images/indian-flag.png";
 const Footer = () => {
   return (
     <footer className="footer-section">
-      <div className="container d-flex justify-content-around mt-3">
+      <div className="container d-flex mt-3">
         <div>
           <img src={whiteLogo} alt="white logo" />
           <div className="d-flex mt-5">
@@ -17,39 +17,41 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div>
-          <h6 className="text-uppercase">The Basics</h6>
-          <ul className="footer-list">
-            <li>About Weekend watch</li>
-            <li>Contact Us</li>
-            <li>Support</li>
-            <li>API</li>
-          </ul>
-        </div>
-        <div>
-          <h6 className="text-uppercase">GET INVOLVED</h6>
-          <ul className="footer-list">
-            <li>Contribution Guidelines</li>
-            <li>Add New Movie</li>
-            <li>Add New TV Show</li>
-          </ul>
-        </div>
-        <div>
-          <h6 className="text-uppercase">COMMUNITY</h6>
-          <ul className="footer-list">
-            <li>Guidelines</li>
-            <li>Discussions</li>
-            <li>Leaderboard</li>
-            <li>Tweeter</li>
-          </ul>
-        </div>
-        <div>
-          <h6 className="text-uppercase">LEGAL</h6>
-          <ul className="footer-list">
-            <li>Terms of use</li>
-            <li>API Terms of use</li>
-            <li>Privacy Policy</li>
-          </ul>
+        <div className="d-flex justify-content-around w-100">
+          <div>
+            <h6 className="text-uppercase">The Basics</h6>
+            <ul className="footer-list">
+              <li>About Weekend watch</li>
+              <li>Contact Us</li>
+              <li>Support</li>
+              <li>API</li>
+            </ul>
+          </div>
+          <div>
+            <h6 className="text-uppercase">GET INVOLVED</h6>
+            <ul className="footer-list">
+              <li>Contribution Guidelines</li>
+              <li>Add New Movie</li>
+              <li>Add New TV Show</li>
+            </ul>
+          </div>
+          <div>
+            <h6 className="text-uppercase">COMMUNITY</h6>
+            <ul className="footer-list">
+              <li>Guidelines</li>
+              <li>Discussions</li>
+              <li>Leaderboard</li>
+              <li>Tweeter</li>
+            </ul>
+          </div>
+          <div>
+            <h6 className="text-uppercase">LEGAL</h6>
+            <ul className="footer-list">
+              <li>Terms of use</li>
+              <li>API Terms of use</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="footer-rights">
