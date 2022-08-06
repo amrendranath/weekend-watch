@@ -1,5 +1,6 @@
 :root {
   --cyan-blue_dark: #042541;
+  --cyan-blue-light: #05345c;
   --white: #ffffff;
   --red: #ec2227;
 }
@@ -9,13 +10,13 @@
   src: local("Gilroy"), url(./assets/fonts/Gilroy-ExtraBold.ttf) format("truetype");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Rubik", "Gilroy", "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
