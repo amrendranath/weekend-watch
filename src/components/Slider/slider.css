@@ -1,0 +1,40 @@
+.carousel-title {
+  font-family: "Gilroy";
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.carousel-desc {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 2rem 0;
+}
+
+.carousel-caption {
+  bottom: 10rem;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.search-input {
+  width: 70%;
+  border: none;
+  box-shadow: 0px 3px 6px #00000058;
+  border-radius: 36px;
+  padding: 0.8rem;
+}
+
+.search-btn {
+  position: absolute;
+  top: 4px;
+  right: 156px;
+  background-color: var(--red);
+  color: var(--white);
+  width: 136px;
+  height: 41px;
+  border-radius: 36px;
+  padding: 7px 14px;
+  border: none;
+}
