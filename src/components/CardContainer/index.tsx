@@ -1,34 +1,22 @@
 import "./cardContainer.css";
 import Tabs from "../Tabs";
-import { useState, useEffect, useCallback } from "react";
-import { getTrendingMovies } from "../../api";
+import { useState } from "react";
+import { StoreContext } from "../../provider/store";
 import MovieCard from "../MovieCard";
 import Slider from "react-slick";
+import { useContext } from "react";
 
 interface IMovie {
   [key: string]: any;
 }
 
 const CardContainer = () => {
+  const { movies } = useContext(StoreContext);
   const [selectedTabValue, setSelectedTabValue] = useState(0);
-  const [movies, setMovies] = useState<IMovie>([] as IMovie[]);
 
   const handleTabChange = (tabValue: number) => {
     setSelectedTabValue(tabValue);
   };
-
-  const getMovies = useCallback(async () => {
-    try {
-      const resp = await getTrendingMovies();
-      setMovies(resp?.data?.results);
-    } catch (err) {
-      console.log("err >>>", err);
-    }
-  }, []);
-
-  useEffect(() => {
-    getMovies();
-  }, [getMovies]);
 
   const settings = {
     className: "slider-custom",

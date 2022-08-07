@@ -18,7 +18,7 @@ const MovieCard = (props: MovieCardProps) => {
     const d = new Date(releaseDate);
     return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
   };
-  console.log("movie >", movie);
+
   return (
     <div className="movie-card">
       <img className="poster" src={BASE_URL + movie?.poster_path} alt="poster" />

@@ -1,6 +1,7 @@
-import React, { useState, ChangeEvent } from "react";
+import { useState, ChangeEvent, useContext } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "./slider.css";
+import { StoreContext } from "../../provider/store";
 
 interface SliderProps {
   images: string[];
@@ -8,6 +9,8 @@ interface SliderProps {
 
 const Slider = (props: SliderProps) => {
   const { images } = props;
+  const { searchMovie } = useContext(StoreContext);
+
   const [index, setIndex] = useState(0);
   const [searchText, setSearchText] = useState("");
 
@@ -38,7 +41,9 @@ const Slider = (props: SliderProps) => {
                     value={searchText}
                     onChange={handleInputChange}
                   />
-                  <button className="search-btn">Search</button>
+                  <button className="search-btn" onClick={() => searchMovie(searchText)}>
+                    Search
+                  </button>
                 </div>
               </Carousel.Caption>
             </Carousel.Item>
