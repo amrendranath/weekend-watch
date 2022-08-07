@@ -1,4 +1,33 @@
+.card_wrapper {
+  height: fit-content;
+  padding: 3rem 0;
+}
+
 .title {
   margin: 0;
   margin-right: 10px;
+}
+
+.slider-wrapper {
+  margin-top: 2rem;
+}
+
+.slick-prev,
+.slick-next {
+  width: 4rem;
+  height: 4rem;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--grey_dark);
+  font-size: 3rem;
+}
+
+.slick-next {
+  right: -60px;
+}
+
+.slick-prev {
+  left: -60px;
 }
